@@ -1,17 +1,18 @@
-# Corso Processing
-Possiamo suddividere il primo incontro in due fasi:
-1. Grafiche statiche
-2. Grafiche in movimento
-
 ### Esempio_1.00
 Applicazione senza codice
 ```cpp
 
 ```
-### Esempio_1.02
+### Esempio_1.01
 Dimensioni della schermata
+```cpp
+size(800,600);
+```
+
+### Esempio_1.02
+Commentare il codice
 ```cpp   
-size(x,y);
+//size(800,600);
 ```
 ### Esempio_1.03
 Schermo intero   
@@ -78,7 +79,7 @@ point(100,100);
 stroke(0,0,200);
 point(200,100);
 ```
-### Esempio_1.10 
+### Esempio_1.11
 Disegnare più punti equidistanti 
 ```cpp
 size(500,500);
@@ -89,42 +90,42 @@ point(100,100);
 point(100*2,100);
 point(100*3,100);
 ```
-### Esempio_1.11 
+### Esempio_1.12 
 Linee
 ```cpp
 size(500,500);
 background(200,0,0);
 line(100,200,400,400);
 ```
-### Esempio_1.12 
+### Esempio_1.13 
 Rettangoli
 ```cpp
 size(500,500);
 background(200,0,0);
 rect(100,100,300,200);
 ```
-### Esempio_1.13 
+### Esempio_1.14 
 Quadrato
 ```cpp
 size(500,500);
 background(200,0,0);
 rect(100,100,300,300);
 ```
-### Esempio_1.14 
+### Esempio_1.15 
 Ellissi
 ```cpp
 size(500,500);
 background(100);
 ellipse(100,100,100,50);
 ```
-### Esempio_1.15 
+### Esempio_1.16 
 Circonferenza
 ```cpp
 size(500,500);
 background(200);
 ellipse(100,100,100,100);
 ```
-### Esempio_1.16 
+### Esempio_1.17 
 Riempimento delle figure chiuse
 ```cpp
 size(500,500);
@@ -132,7 +133,7 @@ background(100);
 fill(200,0,0);
 ellipse(100,100,100,50);
 ```
-### Esempio_1.17 
+### Esempio_1.18 
 Nessun riempimento delle figure chiuse
 ```cpp
 size(500,500);
@@ -140,7 +141,7 @@ background(100);
 noFill();
 ellipse(100,100,100,50);
 ```
-### Esempio_1.18 
+### Esempio_1.19 
 Nessun tratto delle figure chiuse
 ```cpp
 size(500,500);
@@ -149,7 +150,7 @@ noStroke();
 fill(200,0,0);
 ellipse(100,100,100,50);
 ```
-### Esempio_1.19 
+### Esempio_1.20 
 Spessore del tratto delle figure chiuse
 ```cpp
 size(500,500);
@@ -157,7 +158,7 @@ background(100);
 strokeWeight(3);
 ellipse(100,100,100,50);
 ```
-### Esempio_1.20 
+### Esempio_1.21 
 Colore del tratto delle figure chiuse
 ```cpp
 size(500,500);
@@ -165,14 +166,14 @@ background(100);
 stroke(200,0,0);
 ellipse(100,100,100,50);
 ```
-### Esempio_1.21
+### Esempio_1.22
 Testo
 ```cpp
 size(500,500);
 background(100);
 text(123456, 100, 200);
 ```
-### Esempio_1.22 
+### Esempio_1.23 
 Dimesioni del testo
 ```cpp
 size(500,500);
@@ -182,7 +183,7 @@ text(123456, 100, 200);
 ```
 
 
-### Esempio_1.23 
+### Esempio_1.24 
 Colore del testo
 ```cpp
 size(500,500);
@@ -192,7 +193,7 @@ fill(200,200,0);
 text(123456, 100, 200);
 ```
 
-### Esempio_1.24 
+### Esempio_1.25 
 Gradazione di colore
 ```cpp
 size(500,500);
@@ -215,53 +216,8 @@ fill(250,0,0);
 text(555, 200, 250);
 ```
 
-
-
-
-/* Fine prima parte: grafiche statiche
-
-Riepilogo:
-
-  - size(x,y);
-  - background(R,G,B);
-  
-  - point(x,y);
-  - line(x1,y1,x2,y2);
-  - rect(x,y,l,a);
-  - ellipse(x,y,l,a);
-  
-  - stroke(R,G,B);
-  - strokeWeight(n);
-  - noStroke();
-  
-  - fill(R,G,B);
-  - noFill()
-
-  - text(testo,x,y);
-  - textSize(n);
-  - fill(R,G,B);
-
-*/
-
-
-
-
-
-
-
-/*
-Fino ad ora le funzioni utilizzate hanno sempre avuto un effetto a livello grafico:
-- cambio dimensioni
-- cambio colori
-- primitive
-
-ma le esistono funzioni che sono sorgenti di informazioni e possono essere utilizzate in alternativa un numero
-*/
-
-
-
 ### Esempio_2.01 
-// random() su text()
+Sorgente di dati casuali
 ```cpp
 size(500,500);
 background(100);
@@ -270,7 +226,7 @@ text(random(300) , 100, 200);
 ```
 
 ### Esempio_2.02
-// random() su point() 
+Posizionare grafiche in posizioni casuali
 ```cpp
 size(500,500);
 background(0,200,0);
@@ -279,7 +235,7 @@ point(random(500),50);
 ```
 
 ### Esempio_2.03
-// second() su point() 
+Muovere grafiche in funzione del tempo
 ```cpp
 size(500,500);
 background(0,200,0);
@@ -287,10 +243,8 @@ strokeWeight(10);
 point( second() , 500/2 );
 ```
 
-
-
 ### Esempio_2.04 
-// L'orologio rotto
+L'orologio "rotto"
 ```cpp
 size(500,500);
 background(100);
@@ -302,7 +256,7 @@ text(second() , 200, 200);
 
 
 ### Esempio_2.05
-// Il primo programma ciclico (  Maiusc + AltGr + è ) ma ancora non corretto
+Il primo programma ciclico, ma "difettoso"
 ```cpp
 void setup(){
   size(500,500);
@@ -319,7 +273,7 @@ void draw(){
 
 
 ### Esempio_2.06
-// Il secondo programma ciclico (  Maiusc + AltGr + è ) ma ancora non corretto
+Il secondo programma ciclico, ma ancora "difettoso"
 ```cpp
 void setup(){
   size(500,500);
@@ -333,7 +287,7 @@ void draw(){
 ```
 
 ### Esempio_2.07
-// Il primo programma ciclico (  Maiusc + AltGr + è ) corretto
+Il primo programma ciclico corretto
 ```cpp
 void setup(){
   size(500,500);
@@ -350,7 +304,7 @@ void draw(){
 
 
 ### Esempio_2.08
-// Il secondo programma ciclico (  Maiusc + AltGr + è ) corretto
+Il secondo programma ciclico corretto
 ```cpp
 void setup(){
   size(500,500);
@@ -365,7 +319,7 @@ void draw(){
 
 
 ### Esempio_2.09
-// millis() e mettiamo sempre un testo a schermo. Poi aumentiamo dimensioni della schermata. Poi riduciamo l'effetto con millis()/10
+Contare il tempo dall'avvio del programma
 ```cpp
 void setup(){
   size(500,500);
@@ -382,7 +336,7 @@ void draw(){
 
 
 ### Esempio_2.10
-// Lo stesso parametro su più elementi
+Medesimo parametro su più elementi
 ```cpp
 void setup(){
   size(500,500);
@@ -399,7 +353,7 @@ void draw(){
 
 
 ### Esempio_2.11
-// Parametro su circonferenza
+Circonferenza parametrica
 
 ```cpp
 void setup(){
@@ -418,7 +372,7 @@ void draw(){
 
 
 ### Esempio_2.12
-// Misuratore di livello con second() come input
+Misuratore di livello
 
 ```cpp
 
@@ -448,7 +402,7 @@ void draw(){
 
 
 ### Esempio_2.13
-// Grafiche NON parametriche: diagonali e centro dello schermo
+Grafiche NON parametriche: diagonali e centro dello schermo
 ```cpp
 void setup(){
   size(500,500);
@@ -467,7 +421,7 @@ void draw(){
 
 
 ### Esempio_2.14
-// Grafiche parametriche: diagonali e centro dello schermo
+Grafiche parametriche: diagonali e centro dello schermo
 
 ```cpp
 void setup(){
@@ -487,7 +441,7 @@ void draw(){
 
 
 ### Esempio_2.15
-// mouseX e mouseY
+mouseX e mouseY
 
 ```cpp
 void setup(){
@@ -505,7 +459,7 @@ void draw(){
 
 
 ### Esempio_2.16
-// Una sorta di Paint
+Una sorta di Paint
 
 ```cpp
 void setup(){
@@ -524,7 +478,7 @@ void draw(){
 
 
 ### Esempio_2.17
-// Una sorta di Paint
+Una sorta di Paint, con variazioni
 
 ```cpp
 void setup(){
@@ -534,36 +488,8 @@ void setup(){
 void draw(){
   
   //background(200,0,0);
-  
+  fill(millis()/100);
   ellipse(mouseX, mouseY, 50, 50);
 
 }
 ```
-
-
-
-
-
-/*
-
-Riepilogo
-
-abbiamo diversi ingressi:
- 
- -random()
-
- -second()
- -minute()
- -hour()
- -day()
- -month()
- -year()
- 
- -millis()
- 
- -height
- -width
- -mouseX
- -mouseY
-
-*/
