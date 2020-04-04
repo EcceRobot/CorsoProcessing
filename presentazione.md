@@ -4,21 +4,21 @@ Possiamo suddividere il primo incontro in tre fasi:
 3. Grafiche interattive
 
 
-###Esempio_1.00
-```java
+### Esempio_1.00
+```cpp
 // Si lancia applicazione vuota e si descrive cosa si vede e cosa viene messo realmente in atto
 ```
 
 
-###Esempio_1.02
-```java
+### Esempio_1.02
+```cpp
 // Si cambia dimensione, si spiega cosa è una funzione, la sintassi, l'IDE, i commenti   
 size(x,y);
 ```
 
 // Esempio_1.03
 // Andare a schemo intero   
-```java
+```cpp
 fullScreen();
 ```
 
@@ -36,56 +36,56 @@ background(R,G,B);
 
 // Esempio_1.05 
 // Si usa background due volte per mostrare l'ordine di esecuzione dei comandi 
-/*
+```cpp
 background(R,G,B);
 background(R,G,B);
-*/
+```
 
 
 // Esempio_1.06 
 // Il punto, le dimensioni in pixel, l'orientamento degli assi 
-/*
+```cpp
 size(500,500);
 background(0,200,0);
 point(50,50);
-*/
+```
 
 // Esempio_1.07 
 // Dimensione del tratto, oridne di esecuzione anche qui! 
-/*
+```cpp
 size(500,500);
 background(0,200,0);
 point(50,50);
 strokeWeight(5);
-*/
+```
 
 
 // Esempio_1.08 
 // Colore del tratto 
-/*
+```cpp
 size(500,500);
 background(R,G,B);
 strokeWeight(5);
 stroke(R,G,B);
 point(x,y);
-*/
+```
 
 
 // Esempio_1.09 
 // Disegno più punti 
-/*
+```cpp
 size(500,500);
 background(R,G,B);
 strokeWeight(5);
 stroke(R,G,B);
 point(x,y);
 point(x,y);
-*/
+```
 
 
 // Esempio_1.10 
 // Disegno più punti, di colori diversi: ordine di esecuzione! 
-/*
+```cpp
 size(500,500);
 background(R,G,B);
 strokeWeight(5);
@@ -93,12 +93,12 @@ stroke(R,G,B);
 stroke(R,G,B);
 point(x,y);
 point(x,y);
-*/
+```
 
 
 // Esempio_1.10 
 // Disegno più punti, equidistanti: formule! 
-/*
+```cpp
 size(500,500);
 background(R,G,B);
 strokeWeight(5);
@@ -106,149 +106,149 @@ strokeWeight(5);
 point(x,y);
 point(2*x,y);
 point(3*x,y);
-*/
+```
 
 
 
 // Esempio_1.11 
 // Linee
-/*
+```cpp
 size(500,500);
 background(R,G,B);
 line(x1,y1,x2,y2);
-*/
+```
 
 
 
 // Esempio_1.12 
 // Rettangoli. Posizione x,y del vertice in alto a sinistra. Quadrato se l=a
-/*
+```cpp
 size(500,500);
 background(R,G,B);
 rect(x,y,l,a);
-*/
+```
 
 // Esempio_1.13 
 // Quadrato se l=a
-/*
+```cpp
 size(500,500);
 background(R,G,B);
 rect(x,y,200,200);
-*/
+```
 
 
 // Esempio_1.14 
 // Ellissi. Posizione x,y del centro. Larghezza e altezza (come il rettangolo)
-/*
+```cpp
 size(500,500);
 background(100);
 ellipse(100,100,100,50);
-*/
+```
 
 
 // Esempio_1.15 
 // Circonferenza. Ellissi con larghezza=altezza
-/*
+```cpp
 size(500,500);
 background(200);
 ellipse(100,100,100,100);
-*/
+```
 
 
 // Esempio_1.16 
 // Fill, riempimento delle figure chiuse
-/*
+```cpp
 size(500,500);
 background(100);
 fill(R,G,B);
 ellipse(100,100,100,50);
-*/
+```
 
 
 // Esempio_1.17 
 // noFill, riempimento delle figure chiuse
-/*
+```cpp
 size(500,500);
 background(100);
 noFill();
 ellipse(100,100,100,50);
-*/
+```
 
 // Esempio_1.18 
 // noStroke, riempimento delle figure chiuse
-/*
+```cpp
 size(500,500);
 background(100);
 fill(R,G,B);
 ellipse(100,100,100,50);
-*/
+```
 
 
 
 // Esempio_1.19 
 // strokeWeight
-/*
+```cpp
 size(500,500);
 background(100);
 strokeWeight(n);
 ellipse(100,100,100,50);
-*/
+```
 
 
 // Esempio_1.20 
 // stroke
-/*
+```cpp
 size(500,500);
 background(100);
 stroke(R,G,B);
 ellipse(100,100,100,50);
-*/
+```
 
 // Esempio_1.21 
 // stroke
-/*
+```cpp
 size(500,500);
 background(100);
 noStroke();
 ellipse(100,100,100,50);
-*/
+```
 
 
 
 
 // Esempio_1.22 
 // text
-/*
+```cpp
 size(500,500);
 background(100);
 text("TEST", 100, 200);
-*/
+```
 
 
 // Esempio_1.23 
 // textSize
-/*
+```cpp
 size(500,500);
 background(100);
 textSize(30);
 text("TEST", 100, 200);
-*/
+```
 
 
 // Esempio_1.24 
 // colore del testo
-/*
+```cpp
 size(500,500);
 background(100);
 textSize(30);
 fill(200,200,0);
 text("TEST", 100, 200);
-*/
+```
 
 // Esempio_1.25 
 // gradazione di colore
 
-/*
+```cpp
 size(500,500);
 background(100);
 textSize(30);
@@ -262,7 +262,7 @@ fill(200,0,0);
 text("ROSSO_QUATTRO", 200, 200);
 fill(250,0,0);
 text("ROSSO_CINQUE", 200, 250);
-*/
+```
 
 
 
@@ -311,7 +311,7 @@ ma le esistono funzioni che sono sorgenti di informazioni e possono essere utili
 
 // Esempio_2.01 
 // random() su text()
-/*
+```cpp
 size(500,500);
 background(100);
 textSize(30);
@@ -320,39 +320,39 @@ text(random(300) , 100, 200);
 
 // Esempio_2.02
 // random() su point() 
-/*
+```cpp
 size(500,500);
 background(0,200,0);
 strokeWeight(10);
 point(random(500),50);
-*/
+```
 
 // Esempio_2.03
 // second() su point() 
-/*
+```cpp
 size(500,500);
 background(0,200,0);
 strokeWeight(10);
 point( second() , 500/2 );
-*/
+```
 
 
 
 // Esempio_2.04 
 // L'orologio rotto
-/*
+```cpp
 size(500,500);
 background(100);
 textSize(30);
 text(hour() , 100, 200);
 text(minute() , 150, 200);
 text(second() , 200, 200);
-*/
+```
 
 
 // Esempio_2.05
 // Il primo programma ciclico (  Maiusc + AltGr + è ) ma ancora non corretto
-/*
+```cpp
 void setup(){
   size(500,500);
   background(100);
@@ -364,12 +364,12 @@ void draw(){
   text(minute() , 150, 200);
   text(second() , 200, 200);
 }
-*/
+```
 
 
 // Esempio_2.06
 // Il secondo programma ciclico (  Maiusc + AltGr + è ) ma ancora non corretto
-/*
+```cpp
 void setup(){
   size(500,500);
   background(200,0,0);
@@ -379,14 +379,13 @@ void draw(){
   strokeWeight(10);
   point( second() , 500/2 );
 }
-*/
+```
 
 // Esempio_2.07
 // Il primo programma ciclico (  Maiusc + AltGr + è ) corretto
-/*
+```cpp
 void setup(){
   size(500,500);
-  
 }
 
 void draw(){
@@ -396,12 +395,12 @@ void draw(){
   text(minute() , 150, 200);
   text(second() , 200, 200);
 }
-*/
+```
 
 
 // Esempio_2.08
 // Il secondo programma ciclico (  Maiusc + AltGr + è ) corretto
-/*
+```cpp
 void setup(){
   size(500,500);
 }
@@ -411,12 +410,12 @@ void draw(){
   strokeWeight(10);
   point( second() , 500/2 );
 }
-*/
+```
 
 
 // Esempio_2.09
 // millis() e mettiamo sempre un testo a schermo. Poi aumentiamo dimensioni della schermata. Poi riduciamo l'effetto con millis()/10
-/*
+```cpp
 void setup(){
   size(500,500);
 }
@@ -428,12 +427,12 @@ void draw(){
   strokeWeight(10);
   point( millis(), 500/2 );
 }
-*/
+```
 
 
 // Esempio_2.10
 // Lo stesso parametro su più elementi
-/*
+```cpp
 void setup(){
   size(500,500);
 }
@@ -445,13 +444,13 @@ void draw(){
   strokeWeight(10);
   point( millis()/10, 500/2 );
 }
-*/
+```
 
 
 // Esempio_2.11
 // Parametro su circonferenza
 
-/*
+```cpp
 void setup(){
   size(500,500);
 }
@@ -463,14 +462,14 @@ void draw(){
   strokeWeight(10);
   ellipse( millis()/10, 500/2, millis()/100, millis()/100 );
 }
-*/
+```
 
 
 
 // Esempio_2.12
 // Misuratore di livello con second() come input
 
-/*
+```cpp
 
 void setup(){
   size(500,500);
@@ -494,12 +493,12 @@ void draw(){
   text(second() , 100, 400-second()*300/60);
   
 }
-*/
+```
 
 
 // Esempio_2.13
 // Grafiche NON parametriche: diagonali e centro dello schermo
-/*
+```cpp
 void setup(){
   size(500,500);
 }
@@ -513,13 +512,13 @@ void draw(){
   ellipse(500/2,500/2,50,50);
 
 }
-*/
+```
 
 
 // Esempio_2.14
 // Grafiche parametriche: diagonali e centro dello schermo
 
-/*
+```cpp
 void setup(){
   size(700,500);
 }
@@ -533,13 +532,13 @@ void draw(){
   ellipse(width/2,height/2,50,50);
 
 }
-*/
+```
 
 
 // Esempio_2.15
 // mouseX e mouseY
 
-/*
+```cpp
 void setup(){
   size(700,500);
 }
@@ -551,13 +550,13 @@ void draw(){
   ellipse(mouseX, mouseY, 50, 50);
 
 }
-*/
+```
 
 
 // Esempio_2.12
 // Una sorta di Paint
 
-/*
+```cpp
 void setup(){
   size(700,500);
 }
@@ -569,14 +568,14 @@ void draw(){
   ellipse(mouseX, mouseY, 50, 50);
 
 }
-*/
+```
 
 
 
 // Esempio_2.12
 // Una sorta di Paint
 
-/*
+```cpp
 void setup(){
   size(700,500);
 }
@@ -588,7 +587,7 @@ void draw(){
   ellipse(mouseX, mouseY, 50, 50);
 
 }
-*/
+```
 
 
 
