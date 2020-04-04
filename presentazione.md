@@ -27,7 +27,7 @@ fullScreen();
 
 // Esempio_1.04 
 // Si mostra la funzione background, le sue possibili varianti e il tool "Color Selector"
-```java
+```cpp
 size(500,500);
 background(#RGB);
 background(grey);
