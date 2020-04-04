@@ -4,18 +4,17 @@ Possiamo suddividere il primo incontro in tre fasi:
 3. Grafiche interattive
 
 
+###Esempio_1.00
 `
-// Esempio_1.00
 // Si lancia applicazione vuota e si descrive cosa si vede e cosa viene messo realmente in atto
 `
 
 
-// Esempio_1.02
+###Esempio_1.02
+`
 // Si cambia dimensione, si spiega cosa è una funzione, la sintassi, l'IDE, i commenti   
-/*
 size(x,y);
-*/
-
+`
 
 // Esempio_1.03
 // Andare a schemo intero   
