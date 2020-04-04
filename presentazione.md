@@ -5,34 +5,34 @@ Possiamo suddividere il primo incontro in tre fasi:
 
 
 ###Esempio_1.00
-`
+```java
 // Si lancia applicazione vuota e si descrive cosa si vede e cosa viene messo realmente in atto
-`
+```
 
 
 ###Esempio_1.02
-`
+```java
 // Si cambia dimensione, si spiega cosa è una funzione, la sintassi, l'IDE, i commenti   
 size(x,y);
-`
+```
 
 // Esempio_1.03
 // Andare a schemo intero   
-/*
+```java
 fullScreen();
-*/
+```
 
 
 
 
 // Esempio_1.04 
 // Si mostra la funzione background, le sue possibili varianti e il tool "Color Selector"
-/*
+```java
 size(500,500);
 background(#RGB);
 background(grey);
 background(R,G,B);
-*/
+```
 
 // Esempio_1.05 
 // Si usa background due volte per mostrare l'ordine di esecuzione dei comandi 
