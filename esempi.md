@@ -1,267 +1,218 @@
-Possiamo suddividere il primo incontro in tre fasi:
+# Corso Processing
+Possiamo suddividere il primo incontro in due fasi:
 1. Grafiche statiche
 2. Grafiche in movimento
-3. Grafiche interattive
-
 
 ### Esempio_1.00
+Applicazione senza codice
 ```cpp
-// Si lancia applicazione vuota e si descrive cosa si vede e cosa viene messo realmente in atto
+
 ```
-
-
 ### Esempio_1.02
-```cpp
-// Si cambia dimensione, si spiega cosa è una funzione, la sintassi, l'IDE, i commenti   
+Dimensioni della schermata
+```cpp   
 size(x,y);
 ```
-
 ### Esempio_1.03
-// Andare a schemo intero   
+Schermo intero   
 ```cpp
 fullScreen();
 ```
-
-
-
-
 ### Esempio_1.04 
-// Si mostra la funzione background, le sue possibili varianti e il tool "Color Selector"
+Sfondo
 ```cpp
 size(500,500);
-background(#RGB);
-background(grey);
-background(R,G,B);
+//background(#RGB);
+//background(grey);
+//background(R,G,B);
+background(200,0,0);
 ```
-
 ### Esempio_1.05 
-// Si usa background due volte per mostrare l'ordine di esecuzione dei comandi 
+Ordine di esecuzione 
 ```cpp
-background(R,G,B);
-background(R,G,B);
+background(200,0,0);
+background(0,200,0);
 ```
-
-
 ### Esempio_1.06 
-// Il punto, le dimensioni in pixel, l'orientamento degli assi 
+Il punto
 ```cpp
 size(500,500);
 background(0,200,0);
 point(50,50);
 ```
-
 ### Esempio_1.07 
-// Dimensione del tratto, oridne di esecuzione anche qui! 
+Dimensione del tratto
 ```cpp
 size(500,500);
 background(0,200,0);
 point(50,50);
 strokeWeight(5);
 ```
-
-
 ### Esempio_1.08 
-// Colore del tratto 
+Colore del tratto 
 ```cpp
 size(500,500);
-background(R,G,B);
+background(200,0,0);
 strokeWeight(5);
-stroke(R,G,B);
+stroke(200);
 point(x,y);
 ```
-
-
 ### Esempio_1.09 
-// Disegno più punti 
+Disegnare più punti 
 ```cpp
 size(500,500);
-background(R,G,B);
+background(200,0,0);
 strokeWeight(5);
-stroke(R,G,B);
-point(x,y);
-point(x,y);
+stroke(200);
+point(100,100);
+point(200,100);
 ```
-
-
 ### Esempio_1.10 
-// Disegno più punti, di colori diversi: ordine di esecuzione! 
+Disegnare più punti, di colori diversi
 ```cpp
 size(500,500);
-background(R,G,B);
+background(200,0,0);
 strokeWeight(5);
-stroke(R,G,B);
-stroke(R,G,B);
-point(x,y);
-point(x,y);
+stroke(0,200,0);
+point(100,100);
+stroke(0,0,200);
+point(200,100);
 ```
-
-
 ### Esempio_1.10 
-// Disegno più punti, equidistanti: formule! 
+Disegnare più punti equidistanti 
 ```cpp
 size(500,500);
-background(R,G,B);
+background(200,0,0);
 strokeWeight(5);
 
-point(x,y);
-point(2*x,y);
-point(3*x,y);
+point(100,100);
+point(100*2,100);
+point(100*3,100);
 ```
-
-
-
 ### Esempio_1.11 
-// Linee
+Linee
 ```cpp
 size(500,500);
-background(R,G,B);
-line(x1,y1,x2,y2);
+background(200,0,0);
+line(100,200,400,400);
 ```
-
-
-
 ### Esempio_1.12 
-// Rettangoli. Posizione x,y del vertice in alto a sinistra. Quadrato se l=a
+Rettangoli
 ```cpp
 size(500,500);
-background(R,G,B);
-rect(x,y,l,a);
+background(200,0,0);
+rect(100,100,300,200);
 ```
-
 ### Esempio_1.13 
-// Quadrato se l=a
+Quadrato
 ```cpp
 size(500,500);
-background(R,G,B);
-rect(x,y,200,200);
+background(200,0,0);
+rect(100,100,300,300);
 ```
-
-
 ### Esempio_1.14 
-// Ellissi. Posizione x,y del centro. Larghezza e altezza (come il rettangolo)
+Ellissi
 ```cpp
 size(500,500);
 background(100);
 ellipse(100,100,100,50);
 ```
-
-
 ### Esempio_1.15 
-// Circonferenza. Ellissi con larghezza=altezza
+Circonferenza
 ```cpp
 size(500,500);
 background(200);
 ellipse(100,100,100,100);
 ```
-
-
 ### Esempio_1.16 
-// Fill, riempimento delle figure chiuse
+Riempimento delle figure chiuse
 ```cpp
 size(500,500);
 background(100);
-fill(R,G,B);
+fill(200,0,0);
 ellipse(100,100,100,50);
 ```
-
-
 ### Esempio_1.17 
-// noFill, riempimento delle figure chiuse
+Nessun riempimento delle figure chiuse
 ```cpp
 size(500,500);
 background(100);
 noFill();
 ellipse(100,100,100,50);
 ```
-
 ### Esempio_1.18 
-// noStroke, riempimento delle figure chiuse
-```cpp
-size(500,500);
-background(100);
-fill(R,G,B);
-ellipse(100,100,100,50);
-```
-
-
-
-### Esempio_1.19 
-// strokeWeight
-```cpp
-size(500,500);
-background(100);
-strokeWeight(n);
-ellipse(100,100,100,50);
-```
-
-
-### Esempio_1.20 
-// stroke
-```cpp
-size(500,500);
-background(100);
-stroke(R,G,B);
-ellipse(100,100,100,50);
-```
-
-### Esempio_1.21 
-// stroke
+Nessun tratto delle figure chiuse
 ```cpp
 size(500,500);
 background(100);
 noStroke();
+fill(200,0,0);
 ellipse(100,100,100,50);
 ```
-
-
-
-
-### Esempio_1.22 
-// text
+### Esempio_1.19 
+Spessore del tratto delle figure chiuse
 ```cpp
 size(500,500);
 background(100);
-text("TEST", 100, 200);
+strokeWeight(3);
+ellipse(100,100,100,50);
 ```
-
-
-### Esempio_1.23 
-// textSize
+### Esempio_1.20 
+Colore del tratto delle figure chiuse
+```cpp
+size(500,500);
+background(100);
+stroke(200,0,0);
+ellipse(100,100,100,50);
+```
+### Esempio_1.21
+Testo
+```cpp
+size(500,500);
+background(100);
+text(123456, 100, 200);
+```
+### Esempio_1.22 
+Dimesioni del testo
 ```cpp
 size(500,500);
 background(100);
 textSize(30);
-text("TEST", 100, 200);
+text(123456, 100, 200);
 ```
 
 
-### Esempio_1.24 
-// colore del testo
+### Esempio_1.23 
+Colore del testo
 ```cpp
 size(500,500);
 background(100);
 textSize(30);
 fill(200,200,0);
-text("TEST", 100, 200);
+text(123456, 100, 200);
 ```
 
-### Esempio_1.25 
-// gradazione di colore
-
+### Esempio_1.24 
+Gradazione di colore
 ```cpp
 size(500,500);
 background(100);
 textSize(30);
+
 fill(50,0,0);
-text("ROSSO_UNO", 200, 50);
+text(111, 200, 50);
+
 fill(100,0,0);
-text("ROSSO_DUE", 200, 100);
+text(222, 200, 100);
+
 fill(150,0,0);
-text("ROSSO_TRE", 200, 150);
+text(333, 200, 150);
+
 fill(200,0,0);
-text("ROSSO_QUATTRO", 200, 200);
+text(444, 200, 200);
+
 fill(250,0,0);
-text("ROSSO_CINQUE", 200, 250);
+text(555, 200, 250);
 ```
 
 
