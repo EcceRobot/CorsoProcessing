@@ -4,10 +4,10 @@ Possiamo suddividere il primo incontro in tre fasi:
 3. Grafiche interattive
 
 
-``
+`
 // Esempio_1.00
 // Si lancia applicazione vuota e si descrive cosa si vede e cosa viene messo realmente in atto
-``
+`
 
 
 // Esempio_1.02
