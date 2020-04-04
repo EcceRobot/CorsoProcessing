@@ -16,7 +16,7 @@ Possiamo suddividere il primo incontro in tre fasi:
 size(x,y);
 ```
 
-// Esempio_1.03
+### Esempio_1.03
 // Andare a schemo intero   
 ```cpp
 fullScreen();
@@ -25,7 +25,7 @@ fullScreen();
 
 
 
-// Esempio_1.04 
+### Esempio_1.04 
 // Si mostra la funzione background, le sue possibili varianti e il tool "Color Selector"
 ```cpp
 size(500,500);
@@ -34,7 +34,7 @@ background(grey);
 background(R,G,B);
 ```
 
-// Esempio_1.05 
+### Esempio_1.05 
 // Si usa background due volte per mostrare l'ordine di esecuzione dei comandi 
 ```cpp
 background(R,G,B);
@@ -42,7 +42,7 @@ background(R,G,B);
 ```
 
 
-// Esempio_1.06 
+### Esempio_1.06 
 // Il punto, le dimensioni in pixel, l'orientamento degli assi 
 ```cpp
 size(500,500);
@@ -50,7 +50,7 @@ background(0,200,0);
 point(50,50);
 ```
 
-// Esempio_1.07 
+### Esempio_1.07 
 // Dimensione del tratto, oridne di esecuzione anche qui! 
 ```cpp
 size(500,500);
@@ -60,7 +60,7 @@ strokeWeight(5);
 ```
 
 
-// Esempio_1.08 
+### Esempio_1.08 
 // Colore del tratto 
 ```cpp
 size(500,500);
@@ -71,7 +71,7 @@ point(x,y);
 ```
 
 
-// Esempio_1.09 
+### Esempio_1.09 
 // Disegno più punti 
 ```cpp
 size(500,500);
@@ -83,7 +83,7 @@ point(x,y);
 ```
 
 
-// Esempio_1.10 
+### Esempio_1.10 
 // Disegno più punti, di colori diversi: ordine di esecuzione! 
 ```cpp
 size(500,500);
@@ -96,7 +96,7 @@ point(x,y);
 ```
 
 
-// Esempio_1.10 
+### Esempio_1.10 
 // Disegno più punti, equidistanti: formule! 
 ```cpp
 size(500,500);
@@ -110,7 +110,7 @@ point(3*x,y);
 
 
 
-// Esempio_1.11 
+### Esempio_1.11 
 // Linee
 ```cpp
 size(500,500);
@@ -120,7 +120,7 @@ line(x1,y1,x2,y2);
 
 
 
-// Esempio_1.12 
+### Esempio_1.12 
 // Rettangoli. Posizione x,y del vertice in alto a sinistra. Quadrato se l=a
 ```cpp
 size(500,500);
@@ -128,7 +128,7 @@ background(R,G,B);
 rect(x,y,l,a);
 ```
 
-// Esempio_1.13 
+### Esempio_1.13 
 // Quadrato se l=a
 ```cpp
 size(500,500);
@@ -137,7 +137,7 @@ rect(x,y,200,200);
 ```
 
 
-// Esempio_1.14 
+### Esempio_1.14 
 // Ellissi. Posizione x,y del centro. Larghezza e altezza (come il rettangolo)
 ```cpp
 size(500,500);
@@ -146,7 +146,7 @@ ellipse(100,100,100,50);
 ```
 
 
-// Esempio_1.15 
+### Esempio_1.15 
 // Circonferenza. Ellissi con larghezza=altezza
 ```cpp
 size(500,500);
@@ -155,7 +155,7 @@ ellipse(100,100,100,100);
 ```
 
 
-// Esempio_1.16 
+### Esempio_1.16 
 // Fill, riempimento delle figure chiuse
 ```cpp
 size(500,500);
@@ -165,7 +165,7 @@ ellipse(100,100,100,50);
 ```
 
 
-// Esempio_1.17 
+### Esempio_1.17 
 // noFill, riempimento delle figure chiuse
 ```cpp
 size(500,500);
@@ -174,7 +174,7 @@ noFill();
 ellipse(100,100,100,50);
 ```
 
-// Esempio_1.18 
+### Esempio_1.18 
 // noStroke, riempimento delle figure chiuse
 ```cpp
 size(500,500);
@@ -185,7 +185,7 @@ ellipse(100,100,100,50);
 
 
 
-// Esempio_1.19 
+### Esempio_1.19 
 // strokeWeight
 ```cpp
 size(500,500);
@@ -195,7 +195,7 @@ ellipse(100,100,100,50);
 ```
 
 
-// Esempio_1.20 
+### Esempio_1.20 
 // stroke
 ```cpp
 size(500,500);
@@ -204,7 +204,7 @@ stroke(R,G,B);
 ellipse(100,100,100,50);
 ```
 
-// Esempio_1.21 
+### Esempio_1.21 
 // stroke
 ```cpp
 size(500,500);
@@ -216,7 +216,7 @@ ellipse(100,100,100,50);
 
 
 
-// Esempio_1.22 
+### Esempio_1.22 
 // text
 ```cpp
 size(500,500);
@@ -225,7 +225,7 @@ text("TEST", 100, 200);
 ```
 
 
-// Esempio_1.23 
+### Esempio_1.23 
 // textSize
 ```cpp
 size(500,500);
@@ -235,7 +235,7 @@ text("TEST", 100, 200);
 ```
 
 
-// Esempio_1.24 
+### Esempio_1.24 
 // colore del testo
 ```cpp
 size(500,500);
@@ -245,7 +245,7 @@ fill(200,200,0);
 text("TEST", 100, 200);
 ```
 
-// Esempio_1.25 
+### Esempio_1.25 
 // gradazione di colore
 
 ```cpp
@@ -309,16 +309,16 @@ ma le esistono funzioni che sono sorgenti di informazioni e possono essere utili
 
 
 
-// Esempio_2.01 
+### Esempio_2.01 
 // random() su text()
 ```cpp
 size(500,500);
 background(100);
 textSize(30);
 text(random(300) , 100, 200);
-*/
+```
 
-// Esempio_2.02
+### Esempio_2.02
 // random() su point() 
 ```cpp
 size(500,500);
@@ -327,7 +327,7 @@ strokeWeight(10);
 point(random(500),50);
 ```
 
-// Esempio_2.03
+### Esempio_2.03
 // second() su point() 
 ```cpp
 size(500,500);
@@ -338,7 +338,7 @@ point( second() , 500/2 );
 
 
 
-// Esempio_2.04 
+### Esempio_2.04 
 // L'orologio rotto
 ```cpp
 size(500,500);
@@ -350,7 +350,7 @@ text(second() , 200, 200);
 ```
 
 
-// Esempio_2.05
+### Esempio_2.05
 // Il primo programma ciclico (  Maiusc + AltGr + è ) ma ancora non corretto
 ```cpp
 void setup(){
@@ -367,7 +367,7 @@ void draw(){
 ```
 
 
-// Esempio_2.06
+### Esempio_2.06
 // Il secondo programma ciclico (  Maiusc + AltGr + è ) ma ancora non corretto
 ```cpp
 void setup(){
@@ -381,7 +381,7 @@ void draw(){
 }
 ```
 
-// Esempio_2.07
+### Esempio_2.07
 // Il primo programma ciclico (  Maiusc + AltGr + è ) corretto
 ```cpp
 void setup(){
@@ -398,7 +398,7 @@ void draw(){
 ```
 
 
-// Esempio_2.08
+### Esempio_2.08
 // Il secondo programma ciclico (  Maiusc + AltGr + è ) corretto
 ```cpp
 void setup(){
@@ -413,7 +413,7 @@ void draw(){
 ```
 
 
-// Esempio_2.09
+### Esempio_2.09
 // millis() e mettiamo sempre un testo a schermo. Poi aumentiamo dimensioni della schermata. Poi riduciamo l'effetto con millis()/10
 ```cpp
 void setup(){
@@ -430,7 +430,7 @@ void draw(){
 ```
 
 
-// Esempio_2.10
+### Esempio_2.10
 // Lo stesso parametro su più elementi
 ```cpp
 void setup(){
@@ -447,7 +447,7 @@ void draw(){
 ```
 
 
-// Esempio_2.11
+### Esempio_2.11
 // Parametro su circonferenza
 
 ```cpp
@@ -466,7 +466,7 @@ void draw(){
 
 
 
-// Esempio_2.12
+### Esempio_2.12
 // Misuratore di livello con second() come input
 
 ```cpp
@@ -496,7 +496,7 @@ void draw(){
 ```
 
 
-// Esempio_2.13
+### Esempio_2.13
 // Grafiche NON parametriche: diagonali e centro dello schermo
 ```cpp
 void setup(){
@@ -515,7 +515,7 @@ void draw(){
 ```
 
 
-// Esempio_2.14
+### Esempio_2.14
 // Grafiche parametriche: diagonali e centro dello schermo
 
 ```cpp
@@ -535,7 +535,7 @@ void draw(){
 ```
 
 
-// Esempio_2.15
+### Esempio_2.15
 // mouseX e mouseY
 
 ```cpp
@@ -553,7 +553,7 @@ void draw(){
 ```
 
 
-// Esempio_2.12
+### Esempio_2.16
 // Una sorta di Paint
 
 ```cpp
@@ -572,7 +572,7 @@ void draw(){
 
 
 
-// Esempio_2.12
+### Esempio_2.17
 // Una sorta di Paint
 
 ```cpp
