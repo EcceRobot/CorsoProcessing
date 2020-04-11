@@ -1170,7 +1170,7 @@ int posizione_x;
 
 
 
-### vvvvvvvvvvvvEsempio_4.08
+### Esempio_4.08
 // Variazione della posizione, attraverso tasti direzionali
 
 ```cpp
